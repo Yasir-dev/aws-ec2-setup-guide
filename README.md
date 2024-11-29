@@ -238,7 +238,10 @@ Create private:
    0.0.0.0/0 (from anywhere) → IGW (the one which we created above)
 - Internet Gateway route is two way from the i.e anyone can access the resources inside the subnet and all the resource inside the subnet can access the internet  
 
+**Important Note:** This route to the IGW is what makes a subnet public.
+
 Now the resource (EC2) inside the public subnets will be accessible over public internet
+
 
 ## NAT Gateway
 
