@@ -131,6 +131,20 @@ T class instances are among the most widely utilized EC2 instance types. The T2 
 
 You can read more about T3 Instances [here](https://aws.amazon.com/ec2/instance-types/t3/)
 
+## VPC
+
+AWS VPC (Virtual Private Cloud) is a fundamental service for constructing your cloud infrastructure on AWS. It offers a logically isolated virtual network that allows you to deploy your AWS resources, including Amazon EC2 instances, within a secure and scalable environment.
+
+### Regions and availability zones
+
+- To understand VPC first we need to understand AWS regions and availability zones. A region is a physical location around the world where AWS has data centers.
+- Each region consists of multiple, isolated availability zones (physical data centers).
+- An availability zone is one or more discrete data centers within a region, with independent power, cooling, and networking.
+- A VPC is created within a specific region and cannot span multiple regions. For example If you create a VPC in us-east-1, it will only be available in the North Virginia region
+- A VPC can span multiple AZs within the same region.
+
+
+![AWS VPC](diagrams/aws-vpc.png)
 
 ### Creating a VPC
 
